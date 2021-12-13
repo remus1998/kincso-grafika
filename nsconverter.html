@@ -7,24 +7,111 @@
     <!-- Primary Meta Tags -->
     <meta name="title" content="Number System Converter" />
     <meta name="description" content="Convert any number system" />
-    <link rel="stylesheet" href="/kincso-grafika/css/main.css" />
+
     <title>Számrendszer átváltó</title>
+
+    <style>
+      body {
+        background-color: #ffffff67;
+        box-sizing: border-box;
+        color: #000000;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 100%;
+        margin: 0;
+        text-align: right;
+        width: 100%;
+
+        background-image: url("bg.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+
+      #container {
+        display: flex;
+        margin: 50px auto;
+        text-align: center;
+        flex-flow: column;
+        justify-content: center;
+        font-size: 22px;
+      }
+
+      h1 {
+        color: rgba(4, 20, 92, 0.856);
+        text-shadow: 1px 2px 2px rgb(255, 254, 254);
+      }
+
+      label {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      input {
+        background-color: transparent;
+        border-radius: 5px;
+        border: 3px solid #00000049;
+        color: #2f39c2;
+        display: block;
+        font-size: 30px;
+        font-weight: bold;
+        height: 50px;
+        margin: 10px auto;
+        outline: 1px solid transparent;
+        text-align: right;
+        text-transform: uppercase;
+        transition: 0.3s ease;
+        width: 25%;
+      }
+
+      input:focus {
+        border: 3px solid #3f0277;
+        width: 50%;
+      }
+
+      ::placeholder {
+        color: #ffffff80;
+        font-weight: normal;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      footer {
+        padding: 10px;
+      }
+
+      @media (max-width: 767px) {
+        body {
+          height: 100%;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        input {
+          width: 80%;
+        }
+
+        input:focus {
+          width: 90%;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <div id="container">
-      <h1>Converter</h1>
+      <h1>Számrendszer átváltó</h1>
       <label for="input1">Tízes számrendszer:</label>
-      <input type="number" name="" id="input1" placeholder="decimal" />
+      <input type="number" name="" id="input1" placeholder="Decimal" />
 
       <label for="input2">Kettes számrendszer:</label>
-      <input type="number" name="" id="input2" placeholder="binary" />
+      <input type="number" name="" id="input2" placeholder="Binary" />
 
       <label for="input3">Nyolcas számrendszer:</label>
-      <input type="number" name="" id="input3" placeholder="octal" />
+      <input type="number" name="" id="input3" placeholder="Octal" />
 
       <label for="input4">Tizenhatos számrendszer:</label>
-      <input type="text" name="" id="input4" placeholder="hexadecimal" />
+      <input type="text" name="" id="input4" placeholder="Hexadecimal" />
     </div>
 
     <script>
